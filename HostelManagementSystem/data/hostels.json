@@ -1,0 +1,446 @@
+[
+    {
+        "hostel_id": "HST-M01",
+        "hostel_name": "Hostel A",
+        "gender_category": "Male",
+        "location": "North Campus - Block A",
+        "total_rooms": 4,
+        "warden_id": "STF001",
+        "status": "Active",
+        "rooms": [
+            {
+                "room_number": "A101",
+                "hostel_id": "HST-M01",
+                "capacity": 2,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 2,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "A101",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "A101",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "A102",
+                "hostel_id": "HST-M01",
+                "capacity": 2,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 2,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "A102",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "A102",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "A201",
+                "hostel_id": "HST-M01",
+                "capacity": 4,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 4,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "A201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "A201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 3",
+                        "room_number": "A201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 4",
+                        "room_number": "A201",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "A202",
+                "hostel_id": "HST-M01",
+                "capacity": 4,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 4,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "A202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "A202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 3",
+                        "room_number": "A202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 4",
+                        "room_number": "A202",
+                        "status": "Available"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "hostel_id": "HST-M02",
+        "hostel_name": "Hostel B",
+        "gender_category": "Male",
+        "location": "North Campus - Block B",
+        "total_rooms": 4,
+        "warden_id": "STF001",
+        "status": "Active",
+        "rooms": [
+            {
+                "room_number": "B101",
+                "hostel_id": "HST-M02",
+                "capacity": 2,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 2,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "B101",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "B101",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "B102",
+                "hostel_id": "HST-M02",
+                "capacity": 2,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 2,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "B102",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "B102",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "B201",
+                "hostel_id": "HST-M02",
+                "capacity": 4,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 4,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "B201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "B201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 3",
+                        "room_number": "B201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 4",
+                        "room_number": "B201",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "B202",
+                "hostel_id": "HST-M02",
+                "capacity": 4,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 4,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "B202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "B202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 3",
+                        "room_number": "B202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 4",
+                        "room_number": "B202",
+                        "status": "Available"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "hostel_id": "HST-F01",
+        "hostel_name": "Hostel C",
+        "gender_category": "Female",
+        "location": "South Campus - Block C",
+        "total_rooms": 4,
+        "warden_id": "STF002",
+        "status": "Active",
+        "rooms": [
+            {
+                "room_number": "C101",
+                "hostel_id": "HST-F01",
+                "capacity": 2,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 2,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "C101",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "C101",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "C102",
+                "hostel_id": "HST-F01",
+                "capacity": 2,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 2,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "C102",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "C102",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "C201",
+                "hostel_id": "HST-F01",
+                "capacity": 4,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 4,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "C201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "C201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 3",
+                        "room_number": "C201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 4",
+                        "room_number": "C201",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "C202",
+                "hostel_id": "HST-F01",
+                "capacity": 4,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 4,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "C202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "C202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 3",
+                        "room_number": "C202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 4",
+                        "room_number": "C202",
+                        "status": "Available"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "hostel_id": "HST-F02",
+        "hostel_name": "Hostel D",
+        "gender_category": "Female",
+        "location": "South Campus - Block D",
+        "total_rooms": 4,
+        "warden_id": "STF002",
+        "status": "Active",
+        "rooms": [
+            {
+                "room_number": "D101",
+                "hostel_id": "HST-F02",
+                "capacity": 2,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 2,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "D101",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "D101",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "D102",
+                "hostel_id": "HST-F02",
+                "capacity": 2,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 2,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "D102",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "D102",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "D201",
+                "hostel_id": "HST-F02",
+                "capacity": 4,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 4,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "D201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "D201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 3",
+                        "room_number": "D201",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 4",
+                        "room_number": "D201",
+                        "status": "Available"
+                    }
+                ]
+            },
+            {
+                "room_number": "D202",
+                "hostel_id": "HST-F02",
+                "capacity": 4,
+                "occupied_beds": 0,
+                "room_status": "Empty",
+                "available_beds": 4,
+                "beds": [
+                    {
+                        "bed_number": "Bed 1",
+                        "room_number": "D202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 2",
+                        "room_number": "D202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 3",
+                        "room_number": "D202",
+                        "status": "Available"
+                    },
+                    {
+                        "bed_number": "Bed 4",
+                        "room_number": "D202",
+                        "status": "Available"
+                    }
+                ]
+            }
+        ]
+    }
+]

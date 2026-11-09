@@ -1,0 +1,16 @@
+[
+    {
+        "first_name": "Robert",
+        "last_name": "Kato",
+        "gender": "Male",
+        "contact": "0772123456",
+        "address": "Campus Staff Quarters, Kampala",
+        "password": "password123",
+        "staff_id": "STF001",
+        "role": "Hostel Warden",
+        "department": "Hostel Administration",
+        "account_status": "Active",
+        "registration_date": "2026-11-01",
+        "registration_time": "08:00:00"
+    }
+]
