@@ -66,6 +66,16 @@ class Staff(User):
         """Get staff registration time."""
         return self.__registration_time
 
+    def get_profile_summary(self) -> str:
+        """Return the staff-specific profile summary."""
+        return (
+            f"Staff: {self.get_full_name()}\n"
+            f"Staff ID: {self.get_staff_id()}\n"
+            f"Role: {self.get_role()}\n"
+            f"Department: {self.get_department()}\n"
+            f"Account Status: {self.get_account_status()}"
+        )
+
     # --- Setters ---
 
     def set_staff_id(self, staff_id: str) -> None:

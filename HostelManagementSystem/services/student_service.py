@@ -28,25 +28,11 @@ class StudentService:
 
     def view_profile(self, student: Student) -> None:
         """Display detailed student profile."""
-        hostel = self.__hostel_service.get_hostel_by_id(student.get_hostel_id())
-        hostel_name = hostel.get_hostel_name() if hostel else student.get_hostel_id()
-
         MenuHelpers.display_banner("STUDENT PROFILE")
-        print(f" Registration Number : {student.get_registration_number()}")
-        print(f" Full Name           : {student.get_full_name()}")
-        print(f" Gender              : {student.get_gender()}")
-        print(f" Course              : {student.get_course()}")
-        print(f" Contact             : {student.get_contact()}")
-        print(f" Address             : {student.get_address()}")
-        print("-" * 50)
-        print(f" Assigned Hostel     : {hostel_name} ({student.get_hostel_id()})")
-        print(f" Room Number         : Room {student.get_room_number()}")
-        print(f" Bed Number          : {student.get_bed_number()}")
-        print("-" * 50)
-        print(f" Next of Kin         : {student.get_next_of_kin()}")
-        print(f" Next of Kin Contact : {student.get_next_of_kin_contact()}")
-        print(f" Account Status      : {student.get_account_status()}")
-        print(f" Registered On       : {student.get_registration_date()} at {student.get_registration_time()}")
+        print(student.get_profile_summary())
+        print(f"Next of Kin: {student.get_next_of_kin()}")
+        print(f"Next of Kin Contact: {student.get_next_of_kin_contact()}")
+        print(f"Registered On: {student.get_registration_date()} at {student.get_registration_time()}")
         print("=" * 50)
         MenuHelpers.pause()
 

@@ -6,7 +6,7 @@ This application strictly adheres to the requested Object-Oriented Programming (
 1. **Encapsulation**: Every single class attribute is strictly private (`__attribute`). Access and modification occur exclusively through explicit public getter and setter methods.
 2. **Inheritance**: `Student` and `Staff` inherit from the foundational `User` parent class via `super().__init__()`.
 3. **Strict Constraints Compliance**:
-   - **NO Polymorphism**: No polymorphic method overriding or dynamic dispatch.
+   - **Polymorphism**: `Student` and `Staff` override `get_profile_summary()`, allowing the same `User` reference to produce role-specific profile details through dynamic dispatch.
    - **NO Abstract Classes or Interfaces**: Standard concrete classes only; no `abc.ABCMeta` or `@abstractmethod`.
    - **NO Databases**: Persistent storage is handled entirely through standard JSON files (`data/*.json`).
    - **NO External Packages**: 100% powered by the Python Standard Library (`json`, `os`, `sys`, `datetime`, `random`, `re`).
@@ -45,6 +45,7 @@ HostelManagementSystem/
 │   ├── id_generator.py             # Unique ID generation (XXX-XXXXXX-XXX, STF001, etc.)
 │   ├── validators.py               # Phone, password, amount, and name validators
 │   ├── menu_helpers.py             # Console menus, headers, prompts, input sanitization
+│   ├── password_helper.py          # Password hashing and verification
 │   └── date_time_helper.py         # Standardized date, time, and timestamp captures
 ├── data/                           # Persistent JSON database files
 │   ├── hostels.json                # Pre-defined hostels, rooms, and bed statuses
@@ -70,6 +71,7 @@ User (Parent Class)
   - `__first_name`, `__last_name`, `__gender`, `__contact`, `__address`, `__password`
 - **Public Methods**:
   - Getters: `get_first_name()`, `get_last_name()`, `get_gender()`, `get_contact()`, `get_address()`, `get_password()`, `get_full_name()`
+  - Polymorphic operation: `get_profile_summary()`
   - Setters: `set_first_name()`, `set_last_name()`, `set_gender()`, `set_contact()`, `set_address()`, `set_password()`
 
 ### 2. `Student` (Child Class inherits `User`)
@@ -79,6 +81,7 @@ User (Parent Class)
   - Invokes `super().__init__(first_name, last_name, gender, contact, address, password)`
 - **Public Methods**:
   - Getters and setters for all student-specific fields.
+  - Overrides `get_profile_summary()` with registration, course, hostel, room, bed, and account details.
 
 ### 3. `Staff` (Child Class inherits `User`)
 - **Private Attributes**:
@@ -87,6 +90,10 @@ User (Parent Class)
   - Invokes `super().__init__(first_name, last_name, gender, contact, address, password)`
 - **Public Methods**:
   - Getters and setters for all staff-specific fields.
+  - Overrides `get_profile_summary()` with staff ID, role, department, and account details.
+
+### Polymorphism in profile display
+The profile services call `get_profile_summary()` on a concrete user object without branching on its type. Python dispatches the call to the appropriate implementation: students receive student-specific information, while staff receive staff-specific information.
 
 ### 4. Supporting Models
 - **`Hostel`**: `__hostel_id`, `__hostel_name`, `__gender_category`, `__location`, `__total_rooms`, `__warden_id`, `__status`

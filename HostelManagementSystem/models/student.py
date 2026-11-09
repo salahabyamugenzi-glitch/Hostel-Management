@@ -90,6 +90,18 @@ class Student(User):
         """Get account registration time."""
         return self.__registration_time
 
+    def get_profile_summary(self) -> str:
+        """Return the student-specific profile summary."""
+        return (
+            f"Student: {self.get_full_name()}\n"
+            f"Registration Number: {self.get_registration_number()}\n"
+            f"Course: {self.get_course()}\n"
+            f"Hostel: {self.get_hostel_id()}\n"
+            f"Room: {self.get_room_number()}\n"
+            f"Bed: {self.get_bed_number()}\n"
+            f"Account Status: {self.get_account_status()}"
+        )
+
     # --- Setters ---
 
     def set_registration_number(self, registration_number: str) -> None:

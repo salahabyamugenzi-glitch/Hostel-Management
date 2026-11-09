@@ -60,6 +60,15 @@ class User:
         """Get user's concatenated full name."""
         return f"{self.__first_name} {self.__last_name}".strip()
 
+    def get_profile_summary(self) -> str:
+        """Return a profile summary common to all user types."""
+        return (
+            f"Name: {self.get_full_name()}\n"
+            f"Gender: {self.get_gender()}\n"
+            f"Contact: {self.get_contact()}\n"
+            f"Address: {self.get_address()}"
+        )
+
     # --- Setters ---
 
     def set_first_name(self, first_name: str) -> None:

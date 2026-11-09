@@ -3,6 +3,7 @@
 import unittest
 import sys
 import os
+from typing import List
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 if CURRENT_DIR not in sys.path:
@@ -85,6 +86,33 @@ class TestHostelManagementSystemOOP(unittest.TestCase):
         self.assertEqual(staff.get_full_name(), "Robert Kato")
         self.assertEqual(staff.get_staff_id(), "STF001")
         self.assertTrue(hasattr(staff, "_Staff__staff_id"))
+
+    def test_polymorphic_profile_summaries(self):
+        """Verify User references dispatch to each subclass implementation."""
+        student = Student(
+            first_name="Alice",
+            last_name="Nambi",
+            registration_number="202-123456-001",
+            course="Computer Science",
+            hostel_id="HST-F01",
+            room_number="C101",
+            bed_number="Bed 1",
+        )
+        staff = Staff(
+            first_name="Robert",
+            last_name="Kato",
+            staff_id="STF001",
+            role="Hostel Warden",
+            department="Hostel Administration",
+        )
+
+        users: List[User] = [student, staff]
+        summaries = [user.get_profile_summary() for user in users]
+
+        self.assertIn("Student: Alice Nambi", summaries[0])
+        self.assertIn("Registration Number: 202-123456-001", summaries[0])
+        self.assertIn("Staff: Robert Kato", summaries[1])
+        self.assertIn("Role: Hostel Warden", summaries[1])
 
     def test_id_generator_formats(self):
         """Verify unique ID generation formats."""
