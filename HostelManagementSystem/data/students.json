@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "first_name": "Salaha",
+        "last_name": "Byamugenzi",
+        "gender": "Male",
+        "contact": "0778253537",
+        "address": "Mukono",
+        "password": "pbkdf2_sha256$310000$1a975756ddd65a13162cf8b68caf0ed0$bd8f17f92b148b72248608ea91cc109f3375cd9c695ac246a01289abef70a560",
+        "registration_number": "289-943558-145",
+        "course": "BSc Computer Science",
+        "next_of_kin": "Aisha Ahmed",
+        "next_of_kin_contact": "0765002292",
+        "hostel_id": "HST-M01",
+        "room_number": "A101",
+        "bed_number": "Bed 1",
+        "account_status": "Active",
+        "registration_date": "2026-11-09",
+        "registration_time": "18:18:21"
+    }
+]

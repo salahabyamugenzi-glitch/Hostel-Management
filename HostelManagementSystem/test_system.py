@@ -29,7 +29,10 @@ class TestHostelManagementSystemOOP(unittest.TestCase):
 
     def test_encapsulation_and_getters_setters(self):
         """Verify strict encapsulation: private fields and functional getters/setters."""
-        user = User("John", "Doe", "Male", "0771234567", "Kampala", "secret123")
+        with self.assertRaises(TypeError):
+            User("John", "Doe", "Male", "0771234567", "Kampala", "secret123")
+
+        user = Student("John", "Doe", "Male", "0771234567", "Kampala", "secret123")
 
         # Verify attributes are private (mangled in Python as _User__first_name)
         self.assertFalse(hasattr(user, "first_name"))

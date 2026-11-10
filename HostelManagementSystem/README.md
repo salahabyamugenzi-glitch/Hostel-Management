@@ -7,7 +7,7 @@ This application strictly adheres to the requested Object-Oriented Programming (
 2. **Inheritance**: `Student` and `Staff` inherit from the foundational `User` parent class via `super().__init__()`.
 3. **Strict Constraints Compliance**:
    - **Polymorphism**: `Student` and `Staff` override `get_profile_summary()`, allowing the same `User` reference to produce role-specific profile details through dynamic dispatch.
-   - **NO Abstract Classes or Interfaces**: Standard concrete classes only; no `abc.ABCMeta` or `@abstractmethod`.
+   - **Abstraction**: `User` is an abstract base class that defines the common user contract, while `Student` and `Staff` provide concrete implementations.
    - **NO Databases**: Persistent storage is handled entirely through standard JSON files (`data/*.json`).
    - **NO External Packages**: 100% powered by the Python Standard Library (`json`, `os`, `sys`, `datetime`, `random`, `re`).
 
@@ -66,12 +66,13 @@ User (Parent Class)
 └── Staff (Child Class)
 ```
 
-### 1. `User` (Parent Class)
+### 1. `User` (Abstract Parent Class)
 - **Private Attributes**:
   - `__first_name`, `__last_name`, `__gender`, `__contact`, `__address`, `__password`
 - **Public Methods**:
   - Getters: `get_first_name()`, `get_last_name()`, `get_gender()`, `get_contact()`, `get_address()`, `get_password()`, `get_full_name()`
-  - Polymorphic operation: `get_profile_summary()`
+  - Abstract polymorphic operation: `get_profile_summary()`
+  - `User` cannot be instantiated directly; concrete subclasses must implement `get_profile_summary()`.
   - Setters: `set_first_name()`, `set_last_name()`, `set_gender()`, `set_contact()`, `set_address()`, `set_password()`
 
 ### 2. `Student` (Child Class inherits `User`)

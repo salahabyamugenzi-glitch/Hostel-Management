@@ -12,14 +12,14 @@
                 "room_number": "A101",
                 "hostel_id": "HST-M01",
                 "capacity": 2,
-                "occupied_beds": 0,
-                "room_status": "Empty",
-                "available_beds": 2,
+                "occupied_beds": 1,
+                "room_status": "Available",
+                "available_beds": 1,
                 "beds": [
                     {
                         "bed_number": "Bed 1",
                         "room_number": "A101",
-                        "status": "Available"
+                        "status": "Occupied"
                     },
                     {
                         "bed_number": "Bed 2",

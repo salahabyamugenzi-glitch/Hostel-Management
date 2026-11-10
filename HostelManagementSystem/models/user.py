@@ -5,10 +5,11 @@ Strictly encapsulates all attributes using private fields (__attribute)
 with public getter and setter methods.
 """
 
+from abc import ABC, abstractmethod
 from typing import Dict, Any
 
 
-class User:
+class User(ABC):
     """
     Parent class representing a general system user.
     Uses strict encapsulation with private attributes and public getters/setters.
@@ -60,14 +61,10 @@ class User:
         """Get user's concatenated full name."""
         return f"{self.__first_name} {self.__last_name}".strip()
 
+    @abstractmethod
     def get_profile_summary(self) -> str:
-        """Return a profile summary common to all user types."""
-        return (
-            f"Name: {self.get_full_name()}\n"
-            f"Gender: {self.get_gender()}\n"
-            f"Contact: {self.get_contact()}\n"
-            f"Address: {self.get_address()}"
-        )
+        """Return a role-specific profile summary."""
+        raise NotImplementedError
 
     # --- Setters ---
 

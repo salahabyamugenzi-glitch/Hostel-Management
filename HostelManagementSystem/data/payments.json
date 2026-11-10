@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "payment_id": "PAY001",
+        "registration_number": "289-943558-145",
+        "amount": 210000.0,
+        "payment_method": "Airtel Mobile Money",
+        "semester": "Semester I",
+        "academic_year": "2026/2027",
+        "payment_date": "2026-11-09",
+        "payment_time": "18:21:17",
+        "status": "Completed",
+        "transaction_reference": "TXN-3AE51916"
+    }
+]
